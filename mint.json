@@ -34,40 +34,37 @@
     {
       "group": "Using LabEx",
       "pages": [
-        "pages/index",
-        "pages/using-labex/quick-start",
-        "pages/using-labex/virtual-machine",
-        "pages/using-labex/labby-ai",
-        "pages/using-labex/badges"
+        "index",
+        "using-labex/quick-start",
+        "using-labex/virtual-machine",
+        "using-labex/labby-ai",
+        "using-labex/badges",
+        "using-labex/green-learn"
       ]
     },
     {
       "group": "My Account",
       "pages": [
-        "pages/my-account/register-for-free",
-        "pages/my-account/managing-account",
-        "pages/my-account/using-credits"
-      ]
-    },
-    {
-      "group": "LabEx Teams",
-      "pages": [
-        "pages/labex-teams/labex-teams-quick-start",
-        "pages/labex-teams/labex-teams-for-edu",
-        "pages/labex-teams/labex-teams-faq"
+        "my-account/register-for-free",
+        "my-account/managing-account",
+        "my-account/using-credits"
       ]
     },
     {
       "group": "LabEx Pro",
       "pages": [
-        "pages/labex-pro/labex-pro-benifits",
-        "pages/labex-pro/certificates-of-completion",
-        "pages/labex-pro/labex-pro-faq"
+        "labex-pro/labex-pro-benifits",
+        "labex-pro/certificates-of-completion",
+        "labex-pro/labex-pro-faq"
       ]
     },
     {
-      "group": "Others",
-      "pages": ["pages/others/green-learn"]
+      "group": "LabEx Teams",
+      "pages": [
+        "labex-teams/labex-teams-quick-start",
+        "labex-teams/labex-teams-for-edu",
+        "labex-teams/labex-teams-faq"
+      ]
     }
   ],
   "footerSocials": {
