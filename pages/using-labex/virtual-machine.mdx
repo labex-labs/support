@@ -1,0 +1,51 @@
+---
+title: Virtual Machine
+description: Virtual Machine is the infrastructure of LabEx, providing you with hands-on programming experience.
+icon: "laptop-code"
+---
+
+## VM and Labs
+
+LabEx provides a linux virtual environment for you to complete the labs. When you start a lab, it will automatically create a VM for you.
+
+## What is VM?
+
+VM stands for Linux Virtual Machine. It allows you to experience hands-on operations, get creative, and try the code out.
+
+![Image](/images/vm.png)
+
+LabEx's VM provides different interfaces for you to complete the labs.
+
+![Image](/images/vm-interface.png)
+
+1. **Desktop**: A Linux GUI Desktop. You can use it to run GUI applications.
+2. **WebIDE**: A VSCode-like web-based IDE. You can use it to write code.
+3. **Terminal**: A command-line interface. You can use it to run commands and write code.
+
+You can switch between different interfaces by clicking the tabs on the top left corner.
+
+![Image](/images/vm-tabs.png)
+
+Most of the time, LabEx considers the first interface as the most suitable for the current lab. You can also switch to other interfaces if you want to try different ways to complete the lab.
+
+## Save your VM
+
+LabEx Pro can save your VM. You can save your VM by clicking the `Save` button on the top right corner.
+
+When you save your VM, LabEx will save the current state of your VM, including the files you created, the code you wrote, and the applications you installed. You can restore your VM to the saved state at any time.
+
+![Image](/images/select-vm.png)
+
+Specifically:
+
+- Your running applications will be closed when you save your VM. You can restart them after you restore your VM.
+- Some specific VM can not be saved because of the lab requirements. You can not save your VM if you see the `Save` button is disabled.
+- Each lab may have start up scripts. These scripts will be executed when you save your VM and restore your VM. You need to be aware of this when you learn a new lab.
+
+## Basic information about VM
+
+LabEx VMs current use the `Ubuntu 22.04` operating system.
+
+The default user is `labex`, who has `sudo` privileges. No password is set for the `root` and `labex` user.
+
+You can use the `sudo` command to run commands as the `root` user.

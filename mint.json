@@ -1,0 +1,81 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "LabEx Support",
+  "logo": {
+    "dark": "/logo/labex-logo-light.svg",
+    "light": "/logo/labex-logo-dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#2E7EEE",
+    "light": "#2E7EEE",
+    "dark": "#2E7EEE",
+    "anchors": {
+      "from": "#2E7EEE",
+      "to": "#2E7EEE"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Contact Us",
+      "url": "mailto:info@labex.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "LabEx",
+    "url": "https://labex.io"
+  },
+  "primaryTab": {
+    "name": "LabEx Support"
+  },
+  "tabs": [],
+  "anchors": [],
+  "navigation": [
+    {
+      "group": "Using LabEx",
+      "pages": [
+        "pages/index",
+        "pages/using-labex/quick-start",
+        "pages/using-labex/virtual-machine",
+        "pages/using-labex/labby-ai",
+        "pages/using-labex/badges"
+      ]
+    },
+    {
+      "group": "My Account",
+      "pages": [
+        "pages/my-account/register-for-free",
+        "pages/my-account/managing-account",
+        "pages/my-account/using-credits"
+      ]
+    },
+    {
+      "group": "LabEx Teams",
+      "pages": [
+        "pages/labex-teams/labex-teams-quick-start",
+        "pages/labex-teams/labex-teams-for-edu",
+        "pages/labex-teams/labex-teams-faq"
+      ]
+    },
+    {
+      "group": "LabEx Pro",
+      "pages": [
+        "pages/labex-pro/labex-pro-benifits",
+        "pages/labex-pro/certificates-of-completion",
+        "pages/labex-pro/labex-pro-faq"
+      ]
+    },
+    {
+      "group": "Others",
+      "pages": ["pages/others/green-learn"]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/labex-labs",
+    "twitter": "https://twitter.com/WeAreLabEx",
+    "youtube": "https://www.youtube.com/@labexio"
+  },
+  "feedback": {
+    "thumbsRating": true
+  }
+}
