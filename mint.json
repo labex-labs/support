@@ -34,7 +34,7 @@
     {
       "group": "Using LabEx",
       "pages": [
-        "index",
+        "using-labex/index",
         "using-labex/quick-start",
         "using-labex/virtual-machine",
         "using-labex/labby-ai",
