@@ -15,6 +15,12 @@
       "to": "#2E7EEE"
     }
   },
+  "sidebar": {
+    "items": "container"
+  },
+  "background": {
+    "style": "windows"
+  },
   "topbarLinks": [
     {
       "name": "Contact Us",
@@ -69,12 +75,96 @@
       ]
     }
   ],
-  "footerSocials": {
-    "github": "https://github.com/labex-labs",
-    "twitter": "https://twitter.com/WeAreLabEx",
-    "youtube": "https://www.youtube.com/@labexio"
-  },
   "feedback": {
     "thumbsRating": true
+  },
+  "footer": {
+    "socials": {
+      "x": "https://github.com/labex-labs",
+      "twitter": "https://twitter.com/WeAreLabEx",
+      "youtube": "https://www.youtube.com/@labexio"
+    },
+    "links": [
+      {
+        "title": "Playgrounds",
+        "links": [
+          {
+            "label": "Online Linux Terminal",
+            "url": "https://labex.io/tutorials/linux-online-linux-playground-372915"
+          },
+          {
+            "label": "Online Docker Playground",
+            "url": "https://labex.io/tutorials/docker-online-docker-playground-372912"
+          },
+          {
+            "label": "Hands-On Courses",
+            "url": "https://labex.io/courses"
+          },
+          {
+            "label": "Hands-On Projects",
+            "url": "https://labex.io/projects"
+          },
+          {
+            "label": "Contact Us",
+            "url": "mailto:info@labex.com"
+          }
+        ]
+      },
+      {
+        "title": "Skill Trees",
+        "links": [
+          {
+            "label": "Linux Skill Tree",
+            "url": "https://labex.io/skilltrees/linux"
+          },
+          {
+            "label": "DevOps Skill Tree",
+            "url": "https://labex.io/skilltrees/devops"
+          },
+          {
+            "label": "Python Skill Tree",
+            "url": "https://labex.io/skilltrees/python"
+          },
+          {
+            "label": "Docker Skill Tree",
+            "url": "https://labex.io/skilltrees/docker"
+          },
+          {
+            "label": "Kubernetes Skill Tree",
+            "url": "https://labex.io/skilltrees/kubernetes"
+          }
+        ]
+      },
+      {
+        "title": "Free Tutorials",
+        "links": [
+          {
+            "label": " Linux Free Tutorial",
+            "url": "https://labex.io/tutorials/category/linux"
+          },
+          {
+            "label": "DevOps Free Tutorial",
+            "url": "https://labex.io/tutorials/category/devops"
+          },
+          {
+            "label": "Python Free Tutorial",
+            "url": "https://labex.io/tutorials/category/python"
+          },
+          {
+            "label": "Docker Free Tutorial",
+            "url": "https://labex.io/tutorials/category/docker"
+          },
+          {
+            "label": "Kubernetes Free Tutorial",
+            "url": "https://labex.io/tutorials/category/kubernetes"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-ZFCX52ZJTZ"
+    }
   }
 }
