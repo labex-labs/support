@@ -1,0 +1,118 @@
+---
+title: LabEx VM Desktop Interface
+sidebarTitle: Desktop
+description: The LabEx Desktop environment provides a graphical user interface (GUI) for interacting with the Linux Virtual Machine. This environment allows users to complete labs and tasks in a familiar desktop setting.
+icon: "display"
+---
+
+## Desktop Preview
+
+![Desktop Preview](/images/desktop.png)
+
+The Desktop environment is particularly useful for:
+
+1. Labs requiring a graphical interface, such as Linux GUI applications, code editors, and text editors, Python tools, and more.
+2. Tasks that need a web browser.
+3. Beginners who are not yet comfortable with command-line operations and prefer a graphical interface.
+
+## Access the Desktop
+
+1. If the instructor recommends using the desktop environment by default for the Lab, you'll see the desktop environment when you start it.
+2. If you need to complete the Lab in a non-default desktop environment, you can switch to the desktop environment using the tabs at the top.
+
+![Desktop Tabs](/images/20241021-16-28-35-5O8OzEOo.png)
+
+## Desktop Icons
+
+On the left side of the desktop, you'll find several icons:
+
+1. Home: Quick access to your home directory
+2. Xfce Terminal: A terminal emulator for command-line operations
+3. Gvim: A graphical version of the Vim text editor
+4. Text Editor: A simple text editing application
+5. Visual Studio Code: A popular code editor for development tasks
+
+You can access more applications by clicking the "Applications" menu in the bottom left corner.
+
+![Applications Menu](/images/20241021-16-44-04-CkmqmEcq.png)
+
+## Using the Terminal
+
+To access the command line interface within the Desktop environment:
+
+![Terminal](/images/20241021-16-27-06-U7E6cIom.png)
+
+1. Look for the terminal icon on the desktop
+2. Click to open a new terminal window
+3. The terminal provides a command prompt where you can enter Linux commands
+4. By default, the terminal uses the zsh shell
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+
+<Accordion title="How can I install applications that don't exist in the environment?" icon="download">
+
+You can use the `apt install` command to install software. The desktop environment typically uses Ubuntu 22.04, so theoretically, you can install any software compatible with Ubuntu. For example:
+
+```bash
+sudo apt update
+sudo apt install package-name
+```
+
+Remember to use `sudo` for installation commands, as they require administrative privileges.
+
+</Accordion>
+
+<Accordion title="Why is the environment lagging?" icon="wifi">
+
+Environment lag can be due to several factors:
+
+1. Local network: Ensure your local network bandwidth meets the minimum requirement of 10 Mbps.
+2. Free user allocation: Free users may be assigned to our free cluster, which can experience resource constraints during peak usage.
+3. Resource-intensive applications: Running applications like browsers can cause lag. Check your system's memory and CPU usage.
+
+If you experience lag, try closing unnecessary applications and browser tabs to free up resources. If the issue persists, post a feedback message [in our community forum](https://labex.io/questions/933).
+
+</Accordion>
+
+<Accordion title="How can I use a browser in the environment?" icon="globe">
+
+By default, most labs don't require a browser. If you need one:
+
+1. Open a terminal and type `firefox` to launch the browser.
+2. Note that browsers consume significant CPU resources. If the lab doesn't explicitly require a browser, the system may automatically terminate browser-related processes.
+
+Use the browser judiciously to avoid impacting system performance.
+
+</Accordion>
+
+<Accordion title="How do I copy and paste in the terminal?" icon="clipboard">
+
+We recommend using the right mouse button for copy and paste operations. Alternatively:
+
+1. Access the View menu to see available shortcuts.
+2. Default shortcuts may vary depending on your local operating system, so check the "Edit" menu for the correct shortcuts.
+
+   For example, common shortcuts include:
+
+   - Copy: Ctrl+Shift+C (Mac)
+   - Paste: Ctrl+Shift+V (Mac)
+
+   ![Terminal Shortcuts](/images/20241021-16-45-50-eUVD4vXo.png)
+
+</Accordion>
+
+<Accordion title="Can I save my work environment?" icon="floppy-disk">
+
+Currently, LabEx VM does not provide an environment saving feature. There are several reasons for this:
+
+1. Frequent updates: Our labs are regularly updated, which could lead to incompatibilities between saved environments and current lab content.
+2. Maintenance costs: Storing different versions of environments for each user would significantly increase our maintenance costs and complexity.
+3. Lab structure: Most of our labs consist of only 3-5 steps, making it convenient to complete them without needing to save the environment.
+
+We've designed our labs to be concise and easily completable within a single session. If you need to take a break, we recommend noting down your progress and recreating your work environment when you return. This approach ensures you're always working with the most up-to-date lab content and tools.
+
+</Accordion>
+
+</AccordionGroup>
