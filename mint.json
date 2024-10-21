@@ -74,6 +74,10 @@
         "labex-teams/replit-teams-for-education-alternative",
         "labex-teams/google-classroom"
       ]
+    },
+    {
+      "group": "LabEx VM",
+      "pages": ["labex-vm/desktop", "labex-vm/webide", "labex-vm/terminal"]
     }
   ],
   "feedback": {
