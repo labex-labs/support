@@ -1,6 +1,231 @@
 ---
 title: LabEx VM Terminal Interface
 sidebarTitle: TTYD Terminal
-description: Work in progress
+description: The LabEx Terminal Interface provides a lightweight, browser-based command-line environment powered by TTYD. Built on Ubuntu 22.04, it offers a streamlined interface for command-line operations and text-based tasks.
 icon: "terminal"
 ---
+
+## Terminal Preview
+
+![Terminal Preview](/images/terminal.png)
+
+The Terminal environment is particularly useful for:
+
+1. Command-line focused tasks and operations
+2. Server administration and system configuration
+3. Text-based programming and debugging
+4. Resource-efficient remote access when GUI is not needed
+
+## Access the Terminal
+
+1. If the instructor recommends using the terminal environment by default for the Lab, you'll see the terminal environment when you start it.
+2. You can create additional terminal sessions by clicking the + button at the top of the interface.
+
+![Terminal Tabs](/images/screenshot-20241022-CsiJ0RAS@2x.png)
+
+## Environment Features
+
+The Terminal Interface provides several key features:
+
+1. Multiple Terminal Sessions:
+
+   - Create new sessions using the + button
+   - Switch between sessions using tabs
+   - Close sessions individually as needed
+
+2. Full Ubuntu Environment:
+
+   - Based on Ubuntu 22.04 LTS
+   - Access to standard Ubuntu repositories
+   - Support for common command-line tools and utilities
+
+3. Text-Based Tools:
+   - Vim/Nano text editors
+   - Command-line compilers and interpreters
+   - Package management via apt
+   - Git for version control
+
+## TTYD Features
+
+The Terminal Interface is powered by [TTYD](https://github.com/tsl0922/ttyd) (Terminal Over HTTP) and provides several advanced features:
+
+**Using tmux Commands:**
+
+```bash
+# Create splits
+tmux split-window -h     # Split vertically
+tmux split-window -v     # Split horizontally
+tmux split-window -hf    # Full-height vertical split
+tmux split-window -vf    # Full-width horizontal split
+
+# Navigate between panes
+tmux select-pane -L      # Move to left pane
+tmux select-pane -R      # Move to right pane
+tmux select-pane -U      # Move to upper pane
+tmux select-pane -D      # Move to lower pane
+
+# Resize panes
+tmux resize-pane -L 10   # Resize 10 cells to the left
+tmux resize-pane -R 10   # Resize 10 cells to the right
+tmux resize-pane -U 5    # Resize 5 cells up
+tmux resize-pane -D 5    # Resize 5 cells down
+
+# Additional operations
+tmux kill-pane          # Close current pane
+tmux select-layout tiled # Balance pane sizes
+```
+
+![Terminal Split Screen](/images/screenshot-20241022-Re5eBNxa@2x.png)
+
+## Usage Scenarios
+
+<AccordionGroup>
+
+<Accordion title="Basic Command Line Operations" icon="terminal">
+
+Common terminal commands you'll use:
+
+```bash
+# File and Directory Operations
+ls -la           # List all files with details
+cd /path/to/dir  # Change directory
+mkdir new-dir    # Create directory
+rm -rf dir       # Remove directory
+
+# System Information
+uname -a         # System information
+df -h            # Disk usage
+top              # Process monitor
+```
+
+</Accordion>
+
+<Accordion title="Text Editing" icon="pen-to-square">
+
+You can use various text editors:
+
+1. Vim:
+
+```bash
+vim filename.txt  # Open/create file in Vim
+```
+
+2. Nano:
+
+```bash
+nano filename.txt # Open/create file in Nano
+```
+
+Both editors are pre-installed and ready to use.
+
+</Accordion>
+
+<Accordion title="Package Management" icon="box">
+
+Install and manage software packages:
+
+```bash
+# Update package list
+sudo apt update
+
+# Install new packages
+sudo apt install package-name
+
+# Remove packages
+sudo apt remove package-name
+
+# Search for packages
+apt search keyword
+```
+
+</Accordion>
+
+</AccordionGroup>
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+
+<Accordion title="How do I copy and paste text?" icon="clipboard">
+
+TTYD supports several methods for copy/paste:
+
+1. Using Mouse:
+
+   - Select text to copy
+   - Right-click to paste
+
+2. Using Keyboard:
+   - Copy: Ctrl+Insert or Ctrl+Shift+C
+   - Paste: Shift+Insert or Ctrl+Shift+V
+
+Note: Actual shortcuts may vary depending on your browser and operating system.
+
+</Accordion>
+
+<Accordion title="Can I access files from my local machine?" icon="upload">
+
+Yes, you can transfer files using command-line tools:
+
+1. For text content:
+
+   - Copy and paste directly into the terminal
+   - Use text editors to create and modify files
+
+2. For binary files:
+
+   - Use the WebIDE interface for file uploads/downloads
+   - Switch to the WebIDE tab for file management operations
+     ![Upload Files](/images/screenshot-20241022-j7Pl3YZQ@2x.png)
+
+Remember that all files are temporary and will be lost when your session ends.
+
+</Accordion>
+
+<Accordion title="How do I install additional software?" icon="wrench">
+
+You can install software using apt:
+
+```bash
+# Update package list
+sudo apt update
+
+# Install software
+sudo apt install package-name
+```
+
+Note that:
+
+1. Installations are temporary and will be reset when your session ends
+2. You have full sudo privileges for package management
+3. Only install packages needed for your current lab
+
+</Accordion>
+
+<Accordion title="Why choose the Terminal Interface?" icon="question">
+
+The Terminal Interface is ideal when:
+
+1. You need a lightweight environment that loads quickly
+2. Your tasks are primarily command-line based
+3. You want to focus on terminal commands without GUI distractions
+4. You're working on a low-bandwidth connection
+5. You're completing labs that don't require graphical interfaces
+
+Consider using Desktop or WebIDE interfaces if you need GUI applications or advanced IDE features.
+
+</Accordion>
+
+<Accordion title="What happens if my terminal session freezes?" icon="wind">
+
+If your terminal becomes unresponsive:
+
+1. Try pressing Ctrl+C to interrupt the current process
+2. Create a new terminal session using the + button
+3. If needed, refresh the browser page to reset all sessions
+
+Note that refreshing will close all current terminal sessions and start fresh ones.
+
+</Accordion>
+
+</AccordionGroup>
