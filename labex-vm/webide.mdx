@@ -1,6 +1,205 @@
 ---
 title: LabEx VM WebIDE Interface
-sidebarTitle: WebIDE
-description: Work in progress
+sidebarTitle: WebIDE Interface
+description: The LabEx WebIDE provides a modern, VS Code-like development environment for coding tasks. Built on Ubuntu 22.04, it offers a familiar interface for writing, compiling, and running code across multiple programming languages.
 icon: "code"
 ---
+
+## WebIDE Preview
+
+![WebIDE Preview](/images/webide.png)
+
+The WebIDE environment is particularly useful for:
+
+1. Writing and debugging code in various programming languages (Java, JavaScript, Python, etc.)
+2. Web development projects with live preview capabilities
+3. Managing project files and directories through an intuitive interface
+4. Integrated terminal operations for command-line tasks
+
+## Environment Layout
+
+The WebIDE interface consists of several key components:
+
+1. Left Sidebar:
+   - File explorer for project navigation
+   - Search functionality
+   - Source control for Git operations
+   - Extensions panel
+2. Editor Area: Main coding workspace
+3. Bottom Panel: Terminal, problems, and output
+4. Status Bar: Quick access to settings and live preview
+5. Top Menu Bar: File, Edit, View, and other options
+
+## Terminal Access
+
+You can open the terminal in two ways:
+
+1. Click the <i class="fa-regular fa-circle-xmark"></i> icon in the left bottom corner, and switch to the Terminal tab;
+   ![Terminal Access](/images/screenshot-20241022-fOGlaC78@2x.png)
+2. Use the top menu: Terminal > New Terminal
+   ![Terminal Access](/images/screenshot-20241022-wyYSNaTb@2x.png)
+
+## Usage Scenarios
+
+### Java Development
+
+<Card title="Your First Java Lab" icon="flask" href="https://labex.io/labs/java-your-first-java-lab-411751">
+This is a sample Java lab that demonstrates how to write, compile, and run a simple Java program using the LabEx WebIDE.
+</Card>
+
+Working with Java projects in WebIDE:
+
+![Java Development](/images/20241016-13-50-50-DprQuVyZ.png)
+
+1. Create a new Java file via the explorer
+2. Write your Java code with syntax highlighting
+3. Compile and run in the terminal:
+
+```bash
+javac MyClass.java
+java MyClass
+```
+
+4. View compilation errors and warnings in real-time
+
+### Web Development
+
+<Card title="Your First HTML Lab" icon="flask" href="https://labex.io/labs/html-your-first-html-lab-92740">
+This is a sample HTML lab that demonstrates how to create a simple web page using the LabEx WebIDE.
+</Card>
+
+For frontend development tasks:
+
+![Go Live Button](/images/20240725-14-54-07-RbKQNn37@2x.png)
+
+1. Create HTML, CSS, and JavaScript files
+2. Click the "Go Live" button in the bottom right corner
+3. Access your web page through:
+   - Web 8080 tab at the top of the LabEx VM
+   - Create new port preview tabs using the + button
+
+Note: Your project is automatically deployed to a public URL on the LabEx server, making it accessible through the Web tabs.
+
+### Python Development
+
+<Card title="Create an Astronaut Name Tag Processor" icon="flask" href="https://labex.io/labs/python-create-an-astronaut-name-tag-processor-393083">
+This is a sample Python challenge that demonstrates how to process astronaut names using the LabEx WebIDE.
+</Card>
+
+For Python programming:
+
+![Python Development](/images/20241008-16-18-06-HuMxDYQy.png)
+
+1. Create a Python file in the explorer
+2. Write your Python code with:
+   - Syntax highlighting
+   - Code completion
+   - Error detection
+3. Run your script in the terminal:
+
+```bash
+python3 script.py
+```
+
+4. Use the integrated debugger for step-by-step execution
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+
+<Accordion title="How do I access my web application?" icon="globe">
+
+LabEx VM automatically deploys your web projects:
+
+![Web Preview](/images/screenshot-20241022-Sgt0GGyu@2x.png)
+
+1. Default port 8080:
+
+   - Click the "Web 8080" tab at the top of the LabEx VM
+   - Your application will be accessible through a public URL
+
+2. Custom ports:
+   - Click the + button to create new port preview tabs
+   - Each port gets its own public URL
+   - Useful for running multiple services (e.g., frontend and backend)
+
+Note: Unlike local development, you don't access localhost directly as LabEx runs in the cloud.
+
+</Accordion>
+
+<Accordion title="What are the essential keyboard shortcuts?" icon="keyboard">
+
+Common shortcuts in the WebIDE:
+
+- **File Operations**
+
+  - New File: Ctrl+N
+  - Save: Ctrl+S
+  - Find: Ctrl+F
+  - Replace: Ctrl+H
+
+- **Panel Controls**
+
+  - Toggle Sidebar: Ctrl+B
+  - Toggle Terminal: Ctrl+`
+  - Command Palette: Ctrl+Shift+P
+
+- **Editor Features**
+  - Multi-cursor: Alt+Click
+  - Select All Occurrences: Ctrl+Shift+L
+  - Format Document: Shift+Alt+F
+
+</Accordion>
+
+<Accordion title="Can I install additional tools or packages?" icon="wrench">
+
+Yes, you can install additional tools using the Ubuntu package manager:
+
+```bash
+sudo apt update
+sudo apt install package-name
+```
+
+For language-specific package managers:
+
+- Node.js/npm:
+
+```bash
+npm install package-name
+```
+
+- Python/pip:
+
+```bash
+pip install package-name
+```
+
+Remember that installations are temporary and will be reset when your session ends.
+
+</Accordion>
+
+<Accordion title="How do I handle file uploads and downloads?" icon="upload">
+
+The WebIDE provides several ways to manage files:
+
+1. **Upload Files:**
+
+   - Drag and drop files into the explorer
+   - Use the upload/download after right-clicking in the explorer
+
+   ![Upload Files](/images/screenshot-20241022-j7Pl3YZQ@2x.png)
+
+2. **Download Files:**
+
+   - Right-click the file in explorer
+   - Select "Download"
+
+3. **Copy/Paste:**
+   - Text content can be copied directly between your local machine and the WebIDE
+   - Binary files should use the upload/download features
+
+Remember that all files are temporary and will be lost when your session ends.
+
+</Accordion>
+
+</AccordionGroup>
