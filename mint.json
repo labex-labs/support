@@ -77,7 +77,12 @@
     },
     {
       "group": "LabEx VM",
-      "pages": ["labex-vm/desktop", "labex-vm/webide", "labex-vm/terminal"]
+      "pages": [
+        "labex-vm/desktop",
+        "labex-vm/webide",
+        "labex-vm/jupyter",
+        "labex-vm/ttyd"
+      ]
     }
   ],
   "feedback": {
